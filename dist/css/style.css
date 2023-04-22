@@ -1,0 +1,17 @@
+body {
+  background-color: #ebe7ca;
+}
+body span {
+  color: rgb(48, 48, 90);
+}
+
+@media (max-width: 768px) {
+  span {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background-color: green;
+  }
+}

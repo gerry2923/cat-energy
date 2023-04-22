@@ -1,9 +1,9 @@
 import { configFTP } from '../config/ftp.js';
-import ftp from 'vinyl-ftp';
+import vinylFTP from 'vinyl-ftp';
 import gulpUtil from 'gulp-util';
 
 export const ftp = () => {
-  configFTP.log = util.log;
+  configFTP.log = gulpUtil.log;
 
   const ftpConnect = vinylFTP.create(configFTP);
   return app.gulp.src(`${app.path.buildFolder}/**/*.*`, {})
