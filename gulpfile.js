@@ -29,7 +29,7 @@ import { images } from "./gulp/tasks/images.js";
 import { ottToTtf, ttfToWoff, fontStyle } from "./gulp/tasks/fonts.js";
 import { svgSprite } from "./gulp/tasks/svgSprite.js";
 import { zip } from "./gulp/tasks/zip.js";
-import { ftp } from "./gulp/tasks/ftp.js"
+import { ftp } from "./gulp/tasks/ftp.js";
 
 // Наблюдатель за изменениями в файлах
 function watcher() {
@@ -43,7 +43,7 @@ function watcher() {
 
 }
 
-export { svgSprite } 
+export { svgSprite };
 // Последовательная обработка шрифтов
 const fonts = gulp.series(ottToTtf, ttfToWoff, fontStyle);
 
