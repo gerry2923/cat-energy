@@ -1,0 +1,87 @@
+// viweports
+$mobile-width: 767px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+// min-width: 320px;
+
+/**
+  @media (min-width: $tablet-width) {}
+  @media (min-width: $desktop-width) {}
+
+*/
+html {
+  height: 100%;
+  font-family:  "ArialMT", 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  
+  color: black;
+  background-color: ivory;
+
+  @media (min-width: $tablet-width) {
+    font-size: 1.125em;
+    line-height: 1.33em;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// .visually-hidden {
+//   position: absolute;
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   border: 0;
+//   padding: 0;
+//   white-space: nowrap;
+//   clip-path: inset(100%);
+//   clip: rect(0 0 0 0);
+//   overflow: hidden;
+// }
+
+
+.container {
+  @include lineout;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+

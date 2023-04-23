@@ -1,17 +1,118 @@
-body {
-  background-color: #ebe7ca;
+@font-face {
+  font-family: ArialMT;
+  font-display: swap;
+  src: url("../fonts/ArialMT.woff2") format("woff2"), url("../fonts/ArialMT.woff") forman("woff");
+  font-weight: 400;
+  font-style: normal;
 }
-body span {
-  color: rgb(48, 48, 90);
+@font-face {
+  font-family: Oswald;
+  font-display: swap;
+  src: url("../fonts/Oswald-Bold.woff2") format("woff2"), url("../fonts/Oswald-Bold.woff") forman("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Oswald;
+  font-display: swap;
+  src: url("../fonts/Oswald-ExtraLight.woff2") format("woff2"), url("../fonts/Oswald-ExtraLight.woff") forman("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: Oswald;
+  font-display: swap;
+  src: url("../fonts/Oswald-Light.woff2") format("woff2"), url("../fonts/Oswald-Light.woff") forman("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Oswald;
+  font-display: swap;
+  src: url("../fonts/Oswald-Medium.woff2") format("woff2"), url("../fonts/Oswald-Medium.woff") forman("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Oswald;
+  font-display: swap;
+  src: url("../fonts/Oswald-Regular.woff2") format("woff2"), url("../fonts/Oswald-Regular.woff") forman("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Oswald;
+  font-display: swap;
+  src: url("../fonts/Oswald-SemiBold.woff2") format("woff2"), url("../fonts/Oswald-SemiBold.woff") forman("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+/**
+  @media (min-width: $tablet-width) {}
+  @media (min-width: $desktop-width) {}
+
+*/
+html {
+  height: 100%;
+  font-family: "ArialMT", "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 }
 
-@media (max-width: 768px) {
-  span {
-    font-size: 20px;
+body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  color: black;
+  background-color: ivory;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 1.125em;
+    line-height: 1.33em;
   }
 }
-@media (max-width: 768px) {
-  body {
-    background-color: green;
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  outline: 1px dashed darkorange;
+  outline-offset: -1px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

@@ -1,20 +1,9 @@
-body {
-  background-color: rgba($color: #ebe7ca, $alpha: 1);
-  span{
-    color: rgb(48, 48, 90);
-  }
-  // background: url("@img/nature.jpg") 0 0 no-repeat;
-}
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixin.scss";
+@import "global.scss";
 
-@media (max-width: 768px) {
-  span {
-    font-size: 20px;
-  }
-}
 
-@media (max-width: 768px) {
-  body {
-    background-color: green;
-  }
-}
+@import "blocks/main-header.scss";
+
 
