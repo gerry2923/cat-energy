@@ -54,11 +54,11 @@
 */
 html {
   height: 100%;
-  font-family: "ArialMT", "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29em;
+  color: #444444;
 }
 
 body {
@@ -70,8 +70,8 @@ body {
 }
 @media (min-width: 768px) {
   body {
-    font-size: 1.125em;
-    line-height: 1.33em;
+    font-size: 1.143em;
+    line-height: 1.2em;
   }
 }
 
@@ -86,33 +86,71 @@ a {
   color: black;
 }
 
+ul, ol {
+  padding: 0;
+  margin: 0;
+}
+ul li, ol li {
+  list-style: none;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   outline: 1px dashed darkorange;
   outline-offset: -1px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .container {
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 30px;
   }
 }
 @media (min-width: 1440px) {
   .container {
-    padding-left: 110px;
-    padding-right: 110px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 110px;
   }
+}
+
+.header-nav {
+  outline: 1px dashed green;
+  outline-offset: -1px;
+  display: flex;
+  flex-direction: row;
+}
+
+.site-nav:before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 18px;
+  background-image: url("@img/burger-menu.svg");
+  background-color: rgba(0, 128, 0, 0.5);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.site-nav li {
+  display: none;
 }

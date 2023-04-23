@@ -1,25 +1,28 @@
-@mixin lineout ($width: 1px, $color: darkorange){
-	outline: $width dashed $color;
-	outline-offset: -$width;
+@mixin lineout ($color: darkorange){
+	outline: 1px dashed $color;
+	outline-offset: -1px;
 
 }
 
-@mixin title-style {
+@mixin title-text {
 	font-family: "Oswald", Arial, sans-serif;
 	font-weight: 400;
-	font-size: 2.25em;
+  font-style: normal;
+	font-size: 1.25em;
 	line-height: 1em;
-	color: black;
-	margin-top: 0px;
-	margin-bottom: 0px;
 }
 
-@mixin text-style {
+
+@mixin button-text {
+  @include title-text;
+  text-transform: uppercase;
+}
+
+@mixin plaint-text {
 	font-family: Arial, sans-serif;
 	font-weight: 400;
-	font-size: 0.875em;
+	font-size: 14px;
 	line-height: 1.29em;
-	color: $text-color-dark;
-	padding-top: 0px;
-	padding-bottom: 0px;;
+	color: #444444;
+  // padding: 0;
 }

@@ -11,11 +11,7 @@ $desktop-width: 1440px;
 */
 html {
   height: 100%;
-  font-family:  "ArialMT", 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
+  @include plaint-text;
 }
 
 body {
@@ -27,8 +23,8 @@ body {
   background-color: ivory;
 
   @media (min-width: $tablet-width) {
-    font-size: 1.125em;
-    line-height: 1.33em;
+    font-size: 1.143em;
+    line-height: 1.2em;
   }
 }
 
@@ -43,45 +39,51 @@ a {
   color: black;
 }
 
+ul, ol {
+  padding: 0;
+  margin: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-// .visually-hidden {
-//   position: absolute;
-//   width: 1px;
-//   height: 1px;
-//   margin: -1px;
-//   border: 0;
-//   padding: 0;
-//   white-space: nowrap;
-//   clip-path: inset(100%);
-//   clip: rect(0 0 0 0);
-//   overflow: hidden;
-// }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 
 .container {
   @include lineout;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+
+  padding: 0 20px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 110px;
   }
 }
 

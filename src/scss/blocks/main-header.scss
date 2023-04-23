@@ -1,0 +1,21 @@
+.header-nav {
+  @include lineout(green);
+  display: flex;
+  flex-direction: row;
+}
+
+.site-nav {
+  &:before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 18px;
+    background-image: url('@img/burger-menu.svg');
+    background-color: rgba(green, 0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  li {
+    display: none;
+  }
+}
