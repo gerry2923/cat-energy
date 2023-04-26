@@ -30,7 +30,7 @@ export const path = {
     js: `${srcFolder}/js/**/*.js`,
     scss: `${srcFolder}/scss/**/*.scss`,
     html: `${srcFolder}/**/*.html`,
-    images: `${srcFolder}/img/**/*.{jpg, jpeg,png,svg,gif,ico,webp}`,
+    images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
     files: `${srcFolder}/files/**/*.*`, 
   },  // объект за которыми надо смотреть
   clean: buildFolder,

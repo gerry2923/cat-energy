@@ -19,8 +19,8 @@ body {
   min-height: 100%;
   margin: 0;
   
-  color: black;
-  background-color: ivory;
+  color: $color-font-1;
+  background-color: ivory; //$color-font-2;
 
   @media (min-width: $tablet-width) {
     font-size: 1.143em;
@@ -73,7 +73,8 @@ h1, h2, h3, h4 {
 
 
 .container {
-  @include lineout;
+  outline: 1px solid red;
+  outline-offset: -1px;
 
   padding: 0 20px;
   margin: 0 auto;

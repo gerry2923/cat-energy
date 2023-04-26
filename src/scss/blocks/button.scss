@@ -1,0 +1,13 @@
+
+.button {
+  @include title-text;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: white;
+  background-color: $bgcolor;
+  display: block;
+  text-align: center;
+  height: 40px;
+  width: 100%;
+  padding-top: calc(($button-height - $font-size-small) / 2); 
+}

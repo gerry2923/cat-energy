@@ -1,0 +1,17 @@
+.programs *{
+  @include lineout(magenta);
+}
+
+.programs {
+  margin-bottom: 20px;
+}
+
+.programs__list {
+  display: grid;
+  grid-template-columns: 1;
+  gap: 20px;
+}
+
+.programs__item {
+  width: 100%;
+}

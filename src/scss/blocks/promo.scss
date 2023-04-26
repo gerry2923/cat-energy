@@ -1,0 +1,47 @@
+.promo *{
+  @include lineout(green);
+}
+
+.promo__wrapper {
+  background-image:  linear-gradient( to bottom, rgba($bgcolor, 0.85) 0% 63%, white 63% 100%), url("../img/index-background-cat-mobile.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, top;
+  background-size: cover, contain; 
+}
+
+.promo {
+  & .promo__wrapper_inner {
+     display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+ 
+}
+
+.promo__title {
+  @include title-text;
+  font-size: 2.57em;
+  line-height: 1em;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 27px;
+}
+
+.promo__subtitle {
+  @include title-text;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.promo__picture {
+  margin: 15px auto 0;
+  display: block;
+}
+
+.promo__button {
+  margin-top: 3px;
+}

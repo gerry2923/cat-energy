@@ -1,7 +1,7 @@
 @mixin lineout ($color: darkorange){
 	outline: 1px dashed $color;
 	outline-offset: -1px;
-
+	// background-color: rgba(70, 130, 180, 0.5);
 }
 
 @mixin title-text {
@@ -19,9 +19,9 @@
 }
 
 @mixin plaint-text {
-	font-family: Arial, sans-serif;
+	font-family: 'ArialMT', Arial, sans-serif;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: $font-size-small;
 	line-height: 1.29em;
 	color: #444444;
   // padding: 0;
