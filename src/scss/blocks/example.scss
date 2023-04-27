@@ -1,0 +1,41 @@
+.example__wrapper {
+  background-color: $bgcolor-3;
+}
+.example *{
+  @include lineout(royalblue);
+}
+.example {
+  margin-bottom: 20px;
+}
+.example__title {
+  @include title-text;
+  font-size: 2.57em;
+  line-height: 1.11em;
+  padding: 27px 0px 20px 0px;
+  margin-bottom: 13px;
+}
+.example__text {
+  margin-top: 0px;
+  margin-bottom: 26px;
+}
+.example__results {
+  margin: 0px 0px 25px 0px;
+}
+// .example__slider {
+// }
+.example__picture {
+  margin-bottom: 35px;
+}
+.example__image {
+  margin: 0 auto;
+}
+.example__image_before {
+  display: block;
+  transform: scale(1.105);
+}
+.example__image_after {
+  display: none;
+}
+.example__toggle {
+  margin-bottom: 27px;
+}

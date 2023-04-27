@@ -1,0 +1,47 @@
+.main-footer * {
+  @include lineout(darkslateblue);
+}
+
+.main-footer {
+  background-color: $bgcolor-5;
+}
+.main-footer__wrapper-promo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 29px 0;
+}
+
+.main-footer__promo-text {
+  @include title-text;
+  font-size: 1.14em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  margin: 0;
+  width: 50%;
+
+}
+.main-footer__address {
+  font-style: normal;
+  font-size: 1em;
+  line-height: 1.42em;
+  display: block;
+  width: 50%;
+
+}
+// .main-footer__map {
+ 
+// }
+
+.main-footer__nav {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+// .main-footer__nav-item {
+
+// }
+
+

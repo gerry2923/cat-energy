@@ -20,7 +20,7 @@ body {
   margin: 0;
   
   color: $color-font-1;
-  background-color: ivory; //$color-font-2;
+  background-color: $color-font-2; // ivory;
 
   @media (min-width: $tablet-width) {
     font-size: 1.143em;

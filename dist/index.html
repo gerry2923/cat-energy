@@ -13,24 +13,43 @@
 <body>
 
 <header class="main-header ">
-  <div class="container">
-    <nav class="header-nav">
-      <div class="logo">
-        <a href="#" class="logo__link">
-          <div class="logo__img-container">
-            <img src="img/logo-mobile.svg" alt="Логотип" class="logo__pic">
-            <img src="img/logo-mobile-text.svg" alt="CatEnergy" class="logo__title">
-          </div>
-        </a>
+  <nav class="main-header__nav">
+      
+    <div class="main-header__nav-item">
+      <div class="container main-header__nav-iterm-wrapper">
+        <div class="logo">
+          <a href="#" class="logo__link">
+            <div class="logo__img-container">
+              <img src="img/logo-mobile.svg" alt="Логотип" class="logo__pic">
+              <img src="img/logo-mobile-text.svg" alt="CatEnergy" class="logo__title">
+            </div>
+          </a>
+        </div>
+  
+        <button class="main-header__button" type="buton"></button>
       </div>
+    </div>
+        
+     
+    <ul class="main-header__nav-item site-nav">
+      <li class="site-nav__item">
+        <div class="container">
+          <a href="#" class="site-nav__link">Главная</a>
+        </div>
+      </li>
+      <li class="site-nav__item">
+        <div class="container">
+          <a href="index.html" class="site-nav__link">Каталог продукции</a>
+        </div>
+      </li>
+      <li class="site-nav__item">
+        <div class="container">
+          <a href="index.html" class="site-nav__link">Подбор программы</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
 
-      <ul class="site-nav">
-        <li class="site-nav__item"><a href="#" class="site-nav__link">Главная</a></li>
-        <li class="site-nav__item"><a href="index.html" class="site-nav__link">Каталог продукции</a></li>
-        <li class="site-nav__item"><a href="index.html" class="site-nav__link">Подбор программы</a></li>
-      </ul>
-    </nav>
-  </div>
 </header>
 
   <main class="main-layout">
@@ -82,61 +101,83 @@
     </section>
 
 
-    
-    <section class="example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-      <dl class="example__results.results">
-        <dt>5 кг</dt>
-        <dd>снижение веса</dd>
-        <dt>60 дней</dt>
-        <dd>затрачено времени</dd>
-        <dt class="results_bold">15 000 руб.</dt>
-        <dd class="results_bold">затраты на питание:</dd>
-      </dl>
-    
-      <div class="example__slider">
-        <div class="example__picture">
-          <img src="img/cat-fat.png" alt='Кот "ДО"'  class="example__image example__image_before" width="311">
-          <img src="img/cat-after-mobile.png" alt='Кот "ПОСЛЕ"' class="example__image example__image_after" style="display: none;">
-        </div>
-        <div class="example__toggle toggle">
-          <span class="toggle__text"></span>
-          <div class="toggle__container">
-            <div class="toggle__back"></div>
-            <div class="toggle__front"></div>
+    <div class="example__wrapper">
+      <section class="example container">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+        <dl class="example__results results">
+          <div class="results__cell">
+            <dt class="results__number">5 кг</dt>
+            <dd class="results__title">снижение веса</dd>
           </div>
-          <span class="toggle__text"></span>
+          <div class="results__cell">
+            <dt class="results__number">60 дней</dt>
+            <dd class="results__title">затрачено времени</dd>
+          </div>
+          <div class="results__cell">
+            <dt class="results__number ">15 000 руб.</dt>
+            <dd class="results__title">затраты на питание:</dd>
+          </div>
+        </dl>
+      
+        <div class="example__slider">
+          <div class="example__picture">
+            <img src="img/cat-fat.png" alt='Кот "ДО"'  class="example__image example__image_before" width="311" height="232">
+            <img src="img/cat-after-mobile.png" alt='Кот "ПОСЛЕ"' class="example__image example__image_after">
+          </div>
+          <div class="example__toggle toggle">
+            <span class="toggle__text">было</span>
+            <div class="toggle__container">
+              <div class="toggle__back"></div>
+            </div>
+            <span class="toggle__text">стало</span>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
+    
   </main>
 
 <footer class="main-footer">
   <div class="container">
-    <p class="main-footer__promo-text">приглашаем 
+    <div class="main-footer__wrapper-promo">
+      <p class="main-footer__promo-text">приглашаем <br>
       к сотрудничеству дилеров!</p>
-    <address class="main-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <address class="main-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+    </div>
   </div>
   <div class="main-footer__map">
-    <img src="img/map-mobile.png" alt="Карта">
+    <!-- <img src="img/map-mobile.png" alt="Карта"> -->
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e15b6c2dfb3a8f77c702db59eac100320582b5cf9816d177e8f72daa8b0503e&amp;source=constructor" width="100%" height="360" frameborder="0"></iframe>
   </div>
   <div class="container">
-    <div class="main-footer__logo logo">
-      <a href="#" class="logo__link">
-        <img src="img/logo-footer-text-mobile.svg" alt="CapEnergy логотип" class="logo__title"></a>
+    <div class="main-footer__nav">
+      
+      <div class="main-footer__nav-item logo">
+        <a href="#" class="logo__link">
+          <img src="img/logo-footer-text-mobile.svg" alt="CapEnergy логотип" class="logo__title">
+        </a>
+      </div>
+
+      <ul class="main-footer__nav-item socials">
+        <li class="socials__item"><a href="#" class="socials__link">В Контакте</a></li>
+        <li class="socials__item"><a href="#" class="socials__link">Одноклассники</a></li>
+        <li class="socials__item"><a href="#" class="socials__link">Телеграмм</a></li>
+        
+      </ul>
+      <div class="main-footer__nav-item developer">
+        
+        <a href="#" class="developer__title">HTML Academy</a>
+        
+        <a href="#" class="developer__logo">
+          <img src="img/logo-html.svg" alt="HTMLAcademy логотип">
+        </a>
+      </div>
+
     </div>
-    <ul class="main-footer__socials sosials">
-      <li class="socials__item"><a href="#" class="socials__link">В Контакте</a></li>
-      <li class="socials__item"><a href="#" class="socials__link">Одноклассники</a></li>
-      <li class="socials__item"><a href="#" class="socials__link">Телеграмм</a></li>
-      <div class="main-footer developer">
-        <a href="#" class="developer__title">HTML Academy</a><a href="#" class="developer__logo">
-        <img src="img/logo-html.svg" alt="HTMLAcademy логотип">
-      </a></div>
-    </ul>
+    
   </div>  
 </footer>
-
+<script src="js/app.min.js"></script>
 </body>
 </html>

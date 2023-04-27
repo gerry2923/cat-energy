@@ -1,25 +1,40 @@
 <footer class="main-footer">
   <div class="container">
-    <p class="main-footer__promo-text">приглашаем 
+    <div class="main-footer__wrapper-promo">
+      <p class="main-footer__promo-text">приглашаем <br>
       к сотрудничеству дилеров!</p>
-    <address class="main-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <address class="main-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+    </div>
   </div>
   <div class="main-footer__map">
-    <img src="@img/map-mobile.png" alt="Карта">
+    <!-- <img src="@img/map-mobile.png" alt="Карта"> -->
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e15b6c2dfb3a8f77c702db59eac100320582b5cf9816d177e8f72daa8b0503e&amp;source=constructor" width="100%" height="360" frameborder="0"></iframe>
   </div>
   <div class="container">
-    <div class="main-footer__logo logo">
-      <a href="#" class="logo__link">
-        <img src="@img/logo-footer-text-mobile.svg" alt="CapEnergy логотип" class="logo__title"></a>
+    <div class="main-footer__nav">
+      
+      <div class="main-footer__nav-item logo">
+        <a href="#" class="logo__link">
+          <img src="@img/logo-footer-text-mobile.svg" alt="CapEnergy логотип" class="logo__title">
+        </a>
+      </div>
+
+      <ul class="main-footer__nav-item socials">
+        <li class="socials__item"><a href="#" class="socials__link">В Контакте</a></li>
+        <li class="socials__item"><a href="#" class="socials__link">Одноклассники</a></li>
+        <li class="socials__item"><a href="#" class="socials__link">Телеграмм</a></li>
+        
+      </ul>
+      <div class="main-footer__nav-item developer">
+        
+        <a href="#" class="developer__title">HTML Academy</a>
+        
+        <a href="#" class="developer__logo">
+          <img src="@img/logo-html.svg" alt="HTMLAcademy логотип">
+        </a>
+      </div>
+
     </div>
-    <ul class="main-footer__socials sosials">
-      <li class="socials__item"><a href="#" class="socials__link">В Контакте</a></li>
-      <li class="socials__item"><a href="#" class="socials__link">Одноклассники</a></li>
-      <li class="socials__item"><a href="#" class="socials__link">Телеграмм</a></li>
-      <div class="main-footer developer">
-        <a href="#" class="developer__title">HTML Academy</a><a href="#" class="developer__logo">
-        <img src="@img/logo-html.svg" alt="HTMLAcademy логотип">
-      </a></div>
-    </ul>
+    
   </div>  
 </footer>

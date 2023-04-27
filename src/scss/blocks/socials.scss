@@ -1,0 +1,40 @@
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding: 20px 0;
+  border-bottom: 1px solid $bgcolor-2;
+}
+.socials__link {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0px;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+.socials__item:nth-child(1) .socials__link::before {
+  background-image: url('../img/icon_vkontakte.svg');
+}
+.socials__item:nth-child(2) .socials__link::before {
+  background-image: url('../img/icon_facebook.svg');
+}
+.socials__item:nth-child(3) .socials__link::before {
+  background-image: url('../img/icon_instagram.svg');
+}
+
+.socials__item {
+  width: 23px;
+  height: 23px;
+}

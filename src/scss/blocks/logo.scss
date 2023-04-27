@@ -1,0 +1,28 @@
+
+.logo {
+  width: 100%;
+}
+
+.logo__img-container {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo__title {
+  margin: 0 auto;
+}
+
+.main-footer__nav-item.logo {
+
+  height: 90px;
+  border-bottom: 1px solid $bgcolor-2;
+  text-align: center;
+  padding-top: 34px;
+}
+// .logo__link {
+
+// }
+// .logo__title {
+// }

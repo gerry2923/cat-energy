@@ -58,37 +58,44 @@
     </section>
 
 
-    
-    <section class="example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-      <dl class="example__results.results">
-        <dt>5 кг</dt>
-        <dd>снижение веса</dd>
-        <dt>60 дней</dt>
-        <dd>затрачено времени</dd>
-        <dt class="results_bold">15 000 руб.</dt>
-        <dd class="results_bold">затраты на питание:</dd>
-      </dl>
-    
-      <div class="example__slider">
-        <div class="example__picture">
-          <img src="@img/cat-fat.png" alt='Кот "ДО"'  class="example__image example__image_before" width="311">
-          <img src="@img/cat-after-mobile.png" alt='Кот "ПОСЛЕ"' class="example__image example__image_after" style="display: none;">
-        </div>
-        <div class="example__toggle toggle">
-          <span class="toggle__text"></span>
-          <div class="toggle__container">
-            <div class="toggle__back"></div>
-            <div class="toggle__front"></div>
+    <div class="example__wrapper">
+      <section class="example container">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+        <dl class="example__results results">
+          <div class="results__cell">
+            <dt class="results__number">5 кг</dt>
+            <dd class="results__title">снижение веса</dd>
           </div>
-          <span class="toggle__text"></span>
+          <div class="results__cell">
+            <dt class="results__number">60 дней</dt>
+            <dd class="results__title">затрачено времени</dd>
+          </div>
+          <div class="results__cell">
+            <dt class="results__number ">15 000 руб.</dt>
+            <dd class="results__title">затраты на питание:</dd>
+          </div>
+        </dl>
+      
+        <div class="example__slider">
+          <div class="example__picture">
+            <img src="@img/cat-fat.png" alt='Кот "ДО"'  class="example__image example__image_before" width="311" height="232">
+            <img src="@img/cat-after-mobile.png" alt='Кот "ПОСЛЕ"' class="example__image example__image_after">
+          </div>
+          <div class="example__toggle toggle">
+            <span class="toggle__text">было</span>
+            <div class="toggle__container">
+              <div class="toggle__back"></div>
+            </div>
+            <span class="toggle__text">стало</span>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
+    
   </main>
 
 @@include('html/footer.html',{})
-
+<script src="js/app.min.js"></script>
 </body>
 </html>

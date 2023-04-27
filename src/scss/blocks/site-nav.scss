@@ -1,0 +1,24 @@
+.site-nav {
+  display: block;
+}
+
+.site-nav__item {
+  border-bottom: 1px solid $color-3;
+  height: 66px;
+
+  & .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+
+.site-nav__link {
+  @include title-text;
+  font-size: 1.43em;
+  line-height: 1em;
+  text-transform: uppercase;
+  display: block;
+}
