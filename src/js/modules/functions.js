@@ -24,4 +24,6 @@ export function isWebp() {
       }
     });
 
+    console.log(document.querySelector('.site-nav'));
+
 }
