@@ -1,5 +1,5 @@
 .site-nav {
-  display: block;
+  display: none;
 }
 
 .site-nav__item {
@@ -21,4 +21,12 @@
   line-height: 1em;
   text-transform: uppercase;
   display: block;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }

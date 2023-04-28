@@ -21,8 +21,15 @@
   text-align: center;
   padding-top: 34px;
 }
-// .logo__link {
+.logo__link:hover .logo__pic, 
+.logo__link:hover .logo__title {
+  opacity: 0.8;
+}
 
-// }
+.logo__link:active .logo__pic, 
+.logo__link:active .logo__title {
+  opacity: 0.6;
+}
+
 // .logo__title {
 // }

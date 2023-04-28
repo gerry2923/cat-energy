@@ -10,4 +10,9 @@
   height: 40px;
   width: 100%;
   padding-top: calc(($button-height - $font-size-small) / 2); 
+
+
+  &:active {
+    opacity: 0.3;
+  }
 }
